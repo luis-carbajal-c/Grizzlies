@@ -9,10 +9,15 @@ label start:
     pause
     show heisen
     pause
-    Heisenberg "DoTa"
+    Heisenberg "Meme nuevo a las 8pm no te lo pierdas"
     menu:
-        "DoTa":
-            Heisenberg "sape"
+        "¿Que?":
+            Heisenberg "tu no entiendes loco"
         "No":
             Heisenberg "ctm"
+        "Sape meme nuevo":
+            Heisenberg "Yo soy el peligro"
+        "Ga?":
+            Heisenberg "gaaaaa"
+
     return
