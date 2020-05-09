@@ -10,4 +10,9 @@ label start:
     show heisen
     pause
     Heisenberg "DoTa"
+    menu:
+        "DoTa":
+            Heisenberg "sape"
+        "No":
+            Heisenberg "ctm"
     return
