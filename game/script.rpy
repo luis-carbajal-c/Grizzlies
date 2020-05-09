@@ -5,6 +5,8 @@
 define Heisenberg = Character("Heisenberg")
 
 label start:
+
+    $ you = name()
     scene fortnite
     pause
     show heisen
