@@ -1,22 +1,88 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 28, in script
-    y "hiii"
-Exception: Sayer 'y' is not defined.
+  File "game/script.rpy", line 14, in script
+    Heisenberg "DoTa"
+  File "game/script.rpy", line 14, in script
+    Heisenberg "DoTa"
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+  File "game/script.rpy", line 20, in execute
+    screen say(who, what):
+  File "game/script.rpy", line 20, in execute
+    screen say(who, what):
+  File "game/script.rpy", line 21, in execute
+    window id "window":
+  File "game/script.rpy", line 22, in execute
+    vbox:
+  File "game/script.rpy", line 25, in execute
+    text who id "who"
+Exception: Cannot display None as text.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 28, in script
-    y "hiii"
-  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\ast.py", line 678, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\ast.py", line 576, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
-Exception: Sayer 'y' is not defined.
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\bootstrap.py", line 316, in bootstrap
+    renpy.main.main()
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\main.py", line 578, in main
+    run(restart)
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\main.py", line 143, in run
+    renpy.execution.run_context(True)
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\execution.py", line 908, in run_context
+    context.run()
+  File "game/script.rpy", line 14, in script
+    Heisenberg "DoTa"
+  File "game/script.rpy", line 14, in script
+    Heisenberg "DoTa"
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\ast.py", line 671, in execute
+    statement_name("say")
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\ast.py", line 45, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\exports.py", line 1601, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\display\core.py", line 2251, in do_with
+    clear=clear)
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\display\core.py", line 3094, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\display\core.py", line 541, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\display\screen.py", line 430, in visit_all
+    callback(self)
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\display\core.py", line 3094, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\display\screen.py", line 440, in per_interact
+    self.update()
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\display\screen.py", line 625, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 20, in execute
+    screen say(who, what):
+  File "game/script.rpy", line 20, in execute
+    screen say(who, what):
+  File "game/script.rpy", line 21, in execute
+    window id "window":
+  File "game/script.rpy", line 22, in execute
+    vbox:
+  File "game/script.rpy", line 25, in execute
+    text who id "who"
+  File "C:\Users\rcarb\renpy-7.3.5-sdk\renpy\text\text.py", line 1471, in __init__
+    raise Exception("Cannot display {0!r} as text.".format(i))
+Exception: Cannot display None as text.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 Grizzlies 1.0
-Fri May 08 21:04:35 2020
+Fri May 08 22:17:10 2020
